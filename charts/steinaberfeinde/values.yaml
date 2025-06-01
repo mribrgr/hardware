@@ -6,3 +6,8 @@ image:
 service:
   type: ClusterIP
   port: 80
+
+ingress:
+  enabled: true
+  host: www.steinaberfein.de
+  
