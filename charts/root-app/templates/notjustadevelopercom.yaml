@@ -7,8 +7,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/mribrgr/hardware.git
-    path: charts/notjustadevelopercom/
+    repoURL: https://github.com/mribrgr/not-just-a-developer.com.git
+    path: deploy/chart/
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
