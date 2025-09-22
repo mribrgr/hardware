@@ -8,7 +8,7 @@ spec:
   project: default
   source:
     repoURL: https://mongodb.github.io/helm-charts
-    chart: mongodb/community-operator-crds
+    chart: community-operator-crds
     targetRevision: "0.13.0"
     helm:
       values: |
