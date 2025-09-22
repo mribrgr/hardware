@@ -16,7 +16,7 @@ spec:
           watchNamespace: "bricklink-sync"
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: bricklink-sync
   syncPolicy:
     automated:
       prune: true
