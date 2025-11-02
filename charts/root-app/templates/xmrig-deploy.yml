@@ -20,12 +20,12 @@ spec:
         image: ghcr.io/murf2/xmrig.docker:latest
         imagePullPolicy: Always
         resources:
-          limits:
-            cpu: "2"
-            memory: "2Gi"
           requests:
             cpu: "2"
-            memory: "2Gi"
+            memory: "1.5Gi"
+          limits:
+            cpu: "3"
+            memory: "1.5Gi"
         envFrom:
         - secretRef:
             name: xmrig-secret
