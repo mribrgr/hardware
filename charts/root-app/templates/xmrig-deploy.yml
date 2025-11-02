@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: miner
-        image: pmietlicki/xmrig:latest
+        image: ghcr.io/murf2/xmrig.docker:latest
         imagePullPolicy: Always
         resources:
           limits:
