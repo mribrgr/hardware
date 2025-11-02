@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: miner
-        image: ghcr.io/metal3d/xmrig:latest
+        image: pmietlicki/xmrig:latest
         imagePullPolicy: Always
         resources:
           limits:
