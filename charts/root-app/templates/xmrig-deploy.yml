@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xmrig-miner
+  namespace: mining
+  labels:
+    app: xmrig-miner
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: xmrig-miner
+  template:
+    metadata:
+      labels:
+        app: xmrig-miner
+    spec:
+      containers:
+      - name: miner
+        image: ghcr.io/metal3d/xmrig:latest
+        imagePullPolicy: Always
+        resources:
+          limits:
+            cpu: "2"
+            memory: "2Gi"
+          requests:
+            cpu: "2"
+            memory: "2Gi"
+        envFrom:
+        - secretRef:
+            name: xmrig-secret
